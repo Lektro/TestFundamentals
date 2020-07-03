@@ -1,6 +1,7 @@
 package Exc3Books.main;
 
 import Exc3Books.Seller;
+import Exc3Books.books.BookCollection;
 import Exc3Books.books.Books;
 import Exc3Books.PriceList;
 import Exc3Books.Stock;
@@ -13,10 +14,11 @@ public class Exc3BooksMain {
 
         Stock st = new Stock(5);
 
-        Seller elias = new Seller();
+        Seller sl = new Seller();
 
         ArrayList<Books> bookOrder1 = new ArrayList<>();
 
+        bookOrder1.add(sl.orderBook(new BookCollection()))
 
 
 
