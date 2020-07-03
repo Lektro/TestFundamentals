@@ -8,4 +8,5 @@ public interface Seller extends Revenue {
     Books orderBook(BookCollection[] bookCollections ) throws NoMoreBooksException;
 
 
-}
+    }
+

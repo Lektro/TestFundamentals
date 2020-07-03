@@ -9,6 +9,12 @@ public class Books {
     private double bookPrice;
     private int quantity;
 
+    private Book[] books;
+
+    public Books(){}
+
+    public Books(BookCollection[] bookCollections){}
+
 
     /** auto-gen get and set */
     public String getBookTitle() {
