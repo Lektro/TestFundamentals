@@ -1,4 +1,4 @@
-package Exc3Books;
+package Exc3Books.books;
 
 public class Books {
     /** Class variables */
