@@ -12,7 +12,7 @@ public class PalindromeCheck extends Exc2StringTestMain {
         while (i < j) {
 
             /** if there is a mismatch return false */
-            if (str.charAt(i) != str.charAt(j))
+            if (str.toLowerCase().charAt(i) != str.toLowerCase().charAt(j))
                 return false;
 
             /**  Increment first pointer and decrement the other */

@@ -1,5 +1,7 @@
 package StringTest;
 
+import static StringTest.ValidateUrl.isValid;
+
 public class Exc2StringTestMain {
 
     public static void main(String[] args) {
@@ -12,31 +14,31 @@ public class Exc2StringTestMain {
         /** variables predefined by excersise */
         String a = "Lepel";
         String b = "http://www.smartdeveloper.be";
-        String c = "De mooie zeeman nam Anne mee zei oom Ed";
-
-        /** to lowercase so I don't have to search for capital letters */
-        a = a.toLowerCase();
-        b = b.toLowerCase();
-        c = c.toLowerCase();
+        String c = "\"De mooie zeeman nam Anne mee zei oom Ed\"";
 
         /** for loop to count the vowels */
         for (int i = 0; i < a.length(); i++) {
             char ch = a.charAt(i);
-            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == ' ') {
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == ' ' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'U' ) {
                 countA++;
             }
         }
-        /** print result vowel count in string a */
+
+        /** print results of vowel count */
         System.out.println("Total number of vowels in String: " + a + " is equal to: " + countA);
 
         /** print result URL check */
-        System.out.println("Is this a valid URL?: " + !ValidateUrl.validateURL(a));
+        String url1 = a;
+            if (isValid(url1))
+                System.out.println("This a valid URL!");
+            else
+                System.out.println("This is not a valid URL!");
 
         /** if else statement to check the string for a valid palindrome sequence */
         if (PalindromeCheck.isPalindrome(a))
-            System.out.println("This is a valid palindrome! ");
+            System.out.println("This is a valid palindrome!");
         else
-            System.out.println("This is not a valid palindrome! ");
+            System.out.println("This is not a valid palindrome!");
 
         /** to make the output readable by printing an empty line between the string results */
         System.out.println();
@@ -45,21 +47,26 @@ public class Exc2StringTestMain {
         /** for loop to count the vowels in string b */
         for (int j = 0; j < b.length(); j++) {
             char ch = b.charAt(j);
-            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == ' ') {
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == ' ' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'U' ) {
                 countB++;
             }
         }
 
-        /** print results */
+        /** print results of vowel count */
         System.out.println("Total number of vowels in String: " + b + " is equal to: " + countB);
 
-        System.out.println("Is this a valid URL?: " + !ValidateUrl.validateURL(b));
+        /** print result URL check */
+        String url2 = b;
+        if (isValid(url2))
+            System.out.println("This a valid URL!");
+        else
+            System.out.println("This is not a valid URL!");
 
         /** if else statement to check the string for a valid palindrome sequence */
         if (PalindromeCheck.isPalindrome(b))
-            System.out.println("This is a valid palindrome! ");
+            System.out.println("This is a valid palindrome!");
         else
-            System.out.println("This is not a valid palindrome! ");
+            System.out.println("This is not a valid palindrome!");
 
         /** to make the output readable by printing an empty line between the string results */
         System.out.println();
@@ -67,18 +74,24 @@ public class Exc2StringTestMain {
         /** for loop to count the vowels in string c */
         for (int k = 0; k < c.length(); k++) {
             char ch = c.charAt(k);
-            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == ' ') {
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == ' ' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'U' ) {
                 countC++;
             }
         }
 
+        /** print results of vowel count */
         System.out.println("Total number of vowels in the String: " + c + " is equal to: " + countC);
-        System.out.println("Is this a valid URL?: " + !ValidateUrl.validateURL(c));
-        if (PalindromeCheck.isPalindrome(a))
-            System.out.println("This is a valid palindrome! ");
-        else
-            System.out.println("This is not a valid palindrome! ");
 
+        /** print result URL check */
+        String url3 = c;
+        if (isValid(url3))
+            System.out.println("This s a valid URL!");
+        else
+            System.out.println("This is not a valid URL!");
+        if (PalindromeCheck.isPalindrome(c))
+            System.out.println("This is a valid palindrome!");
+        else
+            System.out.println("This is not a valid palindrome!");
     }
 }
 
