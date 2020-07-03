@@ -1,7 +1,9 @@
+package PiefPoefPaf;
+
 import java.util.Random;
 
 
-public class PiefPoefPaf {
+public class Exc1PiefPoefPafMain {
 
     public static void main(String[] args) {
         Random random = new Random();
