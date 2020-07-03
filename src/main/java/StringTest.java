@@ -16,17 +16,20 @@ public class StringTest {
         }
         System.out.println("Total number of characters in the String: " + a + " equals: " + countA);
 
+
         for(int i = 0; i < b.length(); i++) {
             if(b.charAt(i) != ' ')
                 countB++;
         }
         System.out.println("Total number of characters in the String: " + b + " equals: " + countB);
+        System.out.println("Is this URL valid: " + !ValidateUrl.validateURL(b));
 
         for(int i = 0; i < b.length(); i++) {
             if(c.charAt(i) != ' ')
                 countC++;
         }
         System.out.println("Total number of characters in the String: " + c + " equals: " + countC);
+
 
 
     }
