@@ -1,4 +1,4 @@
-package Exc3Books.authors;
+package Exc3Books.books.authors;
 
 import Exc3Books.books.Books;
 
@@ -6,6 +6,8 @@ public class Authors extends Books {
     private String authorName;
     private String email;
     private char gender;
+
+    /** getters and setters for authors */
 
     public String getAuthorName() {
         return authorName;

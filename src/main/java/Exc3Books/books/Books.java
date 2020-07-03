@@ -1,6 +1,6 @@
 package Exc3Books.books;
 
-import java.awt.print.Book;
+import Exc3Books.books.authors.BookCollection;
 
 public class Books {
     /** Class variables */
@@ -9,14 +9,38 @@ public class Books {
     private double bookPrice;
     private int quantity;
 
-    // private Book[] books;
+    private Books[] books;
 
-    public Books(){}
+    public Books(){
+        books = new Books[0];
+    }
+
 
     public Books(BookCollection[] bookCollections){}
 
 
+    public Books[] getBooks() {
+        return books;
+    }
+
+    public void setBooks(Books[] books) {
+        this.books = books;
+    }
+
+    /** method to add books */
+    public void addBooks(Books book){
+
+        if (!(book instanceof Books)) {
+            Books[] result = new Books[books.length + 1];
+            for (int i = 0; i < books.length; i++) {
+                result[i] = books[i];
+            }
+            result[result.length - 1] = (Books) book;
+            books = result;
+        }
+    }
     /** auto-gen get and set */
+
     public String getBookTitle() {
         return bookTitle;
     }
