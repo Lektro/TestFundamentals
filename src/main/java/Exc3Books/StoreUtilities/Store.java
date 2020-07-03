@@ -6,17 +6,12 @@ import Exc3Books.main.NoMoreBooksException;
 
 public class Store implements Seller {
 
-    /**
-     * Class variables
-     */
+    /** Class variables */
     private PriceList pricelist;
     private Stock stock;
     private double revenue;
 
-
-    /**
-     * default constructor
-     */
+    /** default constructor */
     public Store() {}
 
     public Store(PriceList pricelist, Stock stock) {
@@ -27,9 +22,7 @@ public class Store implements Seller {
         this.revenue = revenue;
     }
 
-    /**
-     * Method to order Book
-     */
+    /** Method to order Book */
     public Books orderBook(BookCollection[] bookCollections) throws NoMoreBooksException {
         if (stock.getBook() > 0) {
             Books book = new Books();
@@ -39,8 +32,6 @@ public class Store implements Seller {
         }
         return null;
     }
-
-
 
     @Override
     public String toString() {

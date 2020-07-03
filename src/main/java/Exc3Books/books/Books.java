@@ -3,22 +3,21 @@ package Exc3Books.books;
 import Exc3Books.books.authors.BookCollection;
 
 public class Books {
+
     /** Class variables */
     private String bookTitle;
     private String bookAuthor;
     private double bookPrice;
     private int quantity;
-
     private Books[] books;
 
     public Books(){
         books = new Books[0];
     }
 
-
     public Books(BookCollection[] bookCollections){}
 
-
+    /** get end set for books */
     public Books[] getBooks() {
         return books;
     }
@@ -39,6 +38,7 @@ public class Books {
             books = result;
         }
     }
+
     /** auto-gen get and set */
 
     public String getBookTitle() {

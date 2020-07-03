@@ -1,7 +1,5 @@
 package StringTest;
 
-import StringTest.Exc2StringTestMain;
-
 public class PalindromeCheck extends Exc2StringTestMain {
     static boolean isPalindrome(String str){
         /** Pointers pointing to the beginning and the end of the string */

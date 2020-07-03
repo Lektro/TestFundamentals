@@ -7,6 +7,7 @@ public class Stock {
     /** Default constructor */
     public Stock(){}
 
+    /** Constructor */
     public Stock (int book){
         this.book = book;
     }

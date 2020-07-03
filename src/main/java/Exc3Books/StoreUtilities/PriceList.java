@@ -1,11 +1,13 @@
 package Exc3Books.StoreUtilities;
 
 public class PriceList {
+    /** Class variable */
     private double bookPrice;
 
     /** Default constructor */
     public PriceList(){}
 
+    /**Constructor */
     public PriceList(double bookPrice){
         this.bookPrice = bookPrice;
     }
