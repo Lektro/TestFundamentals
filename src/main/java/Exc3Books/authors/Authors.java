@@ -4,7 +4,7 @@ import Exc3Books.books.Books;
 
 public class Authors extends Books {
     private String authorName;
-    private String eMail;
+    private String email;
     private char gender;
 
     public String getAuthorName() {
@@ -15,12 +15,12 @@ public class Authors extends Books {
         this.authorName = authorName;
     }
 
-    public String geteMail() {
-        return eMail;
+    public String getEmail() {
+        return email;
     }
 
-    public void seteMail(String eMail) {
-        this.eMail = eMail;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public char getGender() {
@@ -36,7 +36,7 @@ public class Authors extends Books {
     public String toString() {
         return "Authors{" +
                 "authorName='" + authorName + '\'' +
-                ", eMail='" + eMail + '\'' +
+                ", eMail='" + email + '\'' +
                 ", gender=" + gender +
                 '}';
     }

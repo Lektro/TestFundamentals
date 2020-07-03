@@ -20,8 +20,11 @@ public class Exc3BooksMain {
         ArrayList<Books> bookOrder1 = new ArrayList<>();
 
         bookOrder1.add(bookstore1.orderBook(new BookCollection[]{BookCollection.Hamlet}));
-        System.out.println("You bought a book written by: " + bookstore1.toString());
-        System.out.println("The total revenue for this order is: " + bookstore1.getRevenue());
+
+        System.out.println("You bought these books: " + bookstore1.toString());
+
+        /** prints out the Price for the order */
+        System.out.println("The total price for this order is: " + bookstore1.getRevenue());
 
 
 

@@ -9,7 +9,7 @@ public class Books {
     private double bookPrice;
     private int quantity;
 
-    private Book[] books;
+    // private Book[] books;
 
     public Books(){}
 
