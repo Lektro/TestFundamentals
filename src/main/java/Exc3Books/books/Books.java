@@ -1,11 +1,14 @@
 package Exc3Books.books;
 
+import java.awt.print.Book;
+
 public class Books {
     /** Class variables */
     private String bookTitle;
     private String bookAuthor;
     private double bookPrice;
     private int quantity;
+
 
     /** auto-gen get and set */
     public String getBookTitle() {

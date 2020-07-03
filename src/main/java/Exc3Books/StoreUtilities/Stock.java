@@ -9,7 +9,6 @@ public class Stock {
 
     public Stock (int book){
         this.book = book;
-
     }
 
     /** auto-gen get and set */
@@ -17,7 +16,8 @@ public class Stock {
         return book;
     }
 
-    public void setBook(int book) {
-        this.book = book;
+    public int setBook(int book) {
+        return book;
     }
+
 }
