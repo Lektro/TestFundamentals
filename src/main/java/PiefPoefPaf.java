@@ -5,24 +5,24 @@ public class PiefPoefPaf {
 
     public static void main(String[] args) {
         Random random = new Random();
+
         for (int i = 0; i < 24; i++) {
+            int x = random.nextInt(1000);
 
-
-        int x = random.nextInt(1000);
-
-        if (x < 500 && x >= 250)
-            System.out.println(x);
-            System.out.println("Poef");
-
-            if (x < 250)
-            System.out.println(x);
-            System.out.println("Pief");
-
-            else  (x > 500) {
+            if (x <= 500 && x >= 250) {
+                    System.out.println(x);
+                    System.out.println("Poef");
+                }
+            if (x <= 250) {
+                    System.out.println(x);
+                    System.out.println("Pief");
+                }
+            if (x >= 500) {
                 System.out.println(x);
                 System.out.println("Paf");
             }
         }
     }
-
 }
+
+
