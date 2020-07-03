@@ -1,10 +1,8 @@
 package Exc3Books.main;
 
-import Exc3Books.Seller;
-import Exc3Books.books.BookCollection;
 import Exc3Books.books.Books;
-import Exc3Books.PriceList;
-import Exc3Books.Stock;
+import Exc3Books.StoreUtilities.PriceList;
+import Exc3Books.StoreUtilities.Stock;
 
 import java.util.ArrayList;
 
@@ -14,11 +12,11 @@ public class Exc3BooksMain {
 
         Stock st = new Stock(5);
 
-        Seller sl = new Seller();
+        // Seller sl = new Seller(ls, st);
 
         ArrayList<Books> bookOrder1 = new ArrayList<>();
 
-        bookOrder1.add(sl.orderBook(new BookCollection()))
+
 
 
 

@@ -1,4 +1,4 @@
-package Exc3Books;
+package Exc3Books.StoreUtilities;
 
 public class PriceList {
     private double bookPrice;
@@ -9,7 +9,7 @@ public class PriceList {
     public PriceList(double bookPrice){
         this.bookPrice = bookPrice;
     }
-    
+
     /** auto-gen get and set */
     public double getBookPrice() {
         return bookPrice;

@@ -1,4 +1,4 @@
-package Exc3Books;
+package Exc3Books.StoreUtilities;
 
 public class Stock {
     /** Class variable */
