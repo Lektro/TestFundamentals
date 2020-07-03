@@ -16,6 +16,8 @@ public class Exc3BooksMain {
         Stock st = new Stock(5);
 
         Books books = new Books();
+        books.setBookTitle("Hamlet");
+        books.setBookAuthor("William Shakespeare");
 
         Seller bookstore1 = new Store(ls, st);
 
@@ -23,7 +25,7 @@ public class Exc3BooksMain {
 
         bookOrder1.add(bookstore1.orderBook(new BookCollection[]{BookCollection.Hamlet}));
 
-        System.out.println("You bought these books: " + books.getBookTitle() + books.getBookAuthor());
+        System.out.println("You bought these books: " + books.getBookTitle() + " by " + books.getBookAuthor());
 
         /** prints out the Price for the order */
         System.out.println("The total price for this order is: " + bookstore1.getRevenue());
