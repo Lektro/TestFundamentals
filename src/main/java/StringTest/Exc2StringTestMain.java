@@ -51,6 +51,9 @@ public class Exc2StringTestMain {
                 countB++;
             }
         }
+        /*
+        Dit mocht ook in een aparte methode. Codeherhaling!
+         */
 
         /** print results of vowel count */
         System.out.println("Total number of vowels in String: " + b + " is equal to: " + countB);
@@ -74,6 +77,10 @@ public class Exc2StringTestMain {
         /** for loop to count the vowels in string c */
         for (int k = 0; k < c.length(); k++) {
             char ch = c.charAt(k);
+            /*
+             * Never cross the side line with long lines of code.
+             * Also capital o forgotten.
+             */
             if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == ' ' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'U' ) {
                 countC++;
             }
@@ -83,6 +90,17 @@ public class Exc2StringTestMain {
         System.out.println("Total number of vowels in the String: " + c + " is equal to: " + countC);
 
         /** print result URL check */
+
+        /*
+         * if-else statements with codeblock curly braces!!!
+         *
+         * if (...) {
+         *
+         * } else {
+         *
+         * }
+         * -> Read book or search youtube 'Clean Code' by Robert Martin aka Uncle Bob.
+         */
         String url3 = c;
         if (isValid(url3))
             System.out.println("This s a valid URL!");

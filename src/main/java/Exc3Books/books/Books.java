@@ -2,13 +2,29 @@ package Exc3Books.books;
 
 import Exc3Books.books.authors.BookCollection;
 
+/**
+ * Should be called Book singular! Use the refactor function in IntelliJ to change.
+ */
 public class Books {
 
     /** Class variables */
+
+    /*
+     * These variable names should just be title, author, price, like you named quantity.
+     */
     private String bookTitle;
+    /*
+     * You created a class called author but you store the author of a book as a string?
+     */
     private String bookAuthor;
     private double bookPrice;
     private int quantity;
+
+    /*
+     * This class models a single book. Putting a collection of books in the 'Book' class is not done.
+     * This would be more suitable for the BookCollection class.
+     * Otherwise every book object you create has a collection inside of it...
+     */
     private Books[] books;
 
     public Books(){
@@ -27,14 +43,19 @@ public class Books {
     }
 
     /** method to add books */
+
     public void addBooks(Books book){
 
+        /*
+         * If the book you want to add is not an instance of this Books class then you add it...
+         * Don't think that's what it's supposed to do?
+         */
         if (!(book instanceof Books)) {
             Books[] result = new Books[books.length + 1];
             for (int i = 0; i < books.length; i++) {
                 result[i] = books[i];
             }
-            result[result.length - 1] = (Books) book;
+            result[result.length - 1] = (Books) book; // your if statement is wrong, that's why intellij warns this will always be null.
             books = result;
         }
     }

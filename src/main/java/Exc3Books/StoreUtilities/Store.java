@@ -18,6 +18,10 @@ public class Store implements Seller {
         this.pricelist = pricelist;
         this.stock = stock;
     }
+
+    /*
+     * One would never want to create a store with its revenues already known. Impossible: redundant constructor.
+     */
     public Store(double revenue){
         this.revenue = revenue;
     }
@@ -27,10 +31,18 @@ public class Store implements Seller {
         if (stock.getBook() > 0) {
             Books book = new Books();
             revenue += pricelist.getBookPrice();
+            /*
+             * 'stock - 1;' will do.
+             * Getters and setters are mostly for variable hiding towards other classes.
+             */
             stock.setBook(stock.getBook() - 1);
             return book;
         }
         return null;
+        /* throw NoMoreBooksException; instead of return null;
+         * This is what the no more books exception is for.
+         * You should move the exception file up a package to make it available to all packages.
+         */
     }
 
     @Override
